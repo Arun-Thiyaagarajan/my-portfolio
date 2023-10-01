@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* colors */
+  --primary-white: #aed1d6;
+  --primary-grey: #81a5aa;
+  --primary-blue: #071143;
+  --primary-dk-blue: #02021c;
+
+  /* fonts */
+  --ibm-plex-mono: 'IBM Plex Mono', monospace;
+  --rubik: 'Rubik', sans-serif;
+
+  /* text */
+  --capitalize: capitalize;
+  --upper-case: uppercase;
+  --lower-case: lowercase;
+
+  /* general */
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+  --fluid-width: 90vw;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* text shadow*/
+    --text-shadow-5: 0 0 5px #7bafc1;
+    --text-shadow-8: 0 0 8px #b5dae6;
+    --text-shadow-10: 0 0 10px #b5dae6;
+    --text-shadow-15: 0 0 15px #b5dae6;
+
+    /* Cursor Style */
+    --default-cursor: url('./assets/cursor-24.png'), auto;
+    --text-cursor: url('./assets/text-cursor.png'), auto;
+}
+
+/*
+-------------------
+    Global CSS
+-------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background: url("./assets/background.svg"); */
+  background: var(--primary-blue);
+  background: -webkit-linear-gradient(330deg, var(--primary-blue) 0%, var(--primary-dk-blue) 100%);
+  background: linear-gradient(330deg, var(--primary-blue) 0%, var(--primary-dk-blue) 100%);
+  font-family: var(--ibm-plex-mono);
+  cursor: var(--default-cursor);
+}
+
+p {
+  cursor: url('./assets/text-cursor.png'), auto;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: url('./assets/cursor-pointer.png'),auto;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 992px) {  
+  .pd-inline {
+    padding-inline: 150px;
+  }
+}
+
+@media screen and (max-width: 400px) {  
+  .pd-inline {
+    padding-inline: 1.2rem;
+  }
+}

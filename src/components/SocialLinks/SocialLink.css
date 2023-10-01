@@ -1,0 +1,34 @@
+.social-link-container {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 0.5rem;
+    border-radius: 50px;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid var(--primary-white);
+    box-shadow: 0 1px 5px #99d5ea;
+    position: fixed;
+    top: 35vh;
+    left: 1rem;
+}
+
+.social-link {
+    padding: 0.3rem;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    background-color: #9dc0cc4b ;
+    box-shadow: 0 0 5px #99d5ea;
+}
+
+.social-link-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}

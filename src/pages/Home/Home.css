@@ -1,0 +1,82 @@
+.hero {
+    width: 100%;
+    height: calc(100vh - 6rem);
+    display: flex;
+    justify-content: center;
+}
+
+.hello-text {
+    width: auto;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--primary-white);
+    user-select: none;
+}
+
+.hero-content {
+    user-select: none;
+    cursor: var(--default-cursor);
+    text-transform: capitalize;
+    width: 70%;
+    margin: auto;
+    /* font-weight: bold; */
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--primary-grey);
+    line-height: 1.8;
+}
+
+.job-role {
+    color: var(--primary-white);
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--borderRadius);
+}
+
+@media screen and (max-width: 772px) {
+    .hero {
+        height: 100vh;
+        width: 100%;
+    }
+    .hello-text {
+        margin-top: 5rem;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .hero-content {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+.hello-tex::after {
+    content: '|';
+    /* Initial cursor */
+    display: inline-block;
+    animation: typing 1s steps(1, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #000;
+        /* Color of the cursor */
+    }
+}
