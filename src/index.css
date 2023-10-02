@@ -7,9 +7,7 @@
   --primary-blue: #071143;
   --primary-dk-blue: #02021c;
   --primary-vnav-blue: #08081c;
-  
-  --violet: #c9aed6;
-  --green: #aed6c0;
+  --hover-bg-color: #9dc0cc20;
 
   /* fonts */
   --ibm-plex-mono: 'IBM Plex Mono', monospace;
@@ -120,6 +118,12 @@ a {
   transform: translateX(0);
 }
 
+.highlight {
+  background-color: var(--hover-bg-color);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
 
 .upper-case {
   text-transform: uppercase;

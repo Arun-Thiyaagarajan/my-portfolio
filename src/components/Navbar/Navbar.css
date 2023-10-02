@@ -41,7 +41,7 @@
 }
 
 .nav-link:hover {
-    background-color: #9dc0cc20;
+    background-color: var(--hover-bg-color);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     text-decoration: underline;

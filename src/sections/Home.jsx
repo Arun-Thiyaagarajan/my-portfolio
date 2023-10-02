@@ -39,7 +39,7 @@ const Home = () => {
                         <h1 className="hello-text">hello world :)</h1>
                         <p className="hero-content">
                             <span><FaQuoteLeft /> </span>
-                            In the world of web & app development, I'm the craftsman weaving a tapestry of code and creativity! Inviting users on immersive journeys.
+                            In the world of <span className='highlight'>web & app development</span>, I'm the craftsman weaving a tapestry of code and creativity! Inviting users on immersive journeys.
                             <span> <FaQuoteRight /></span>
                         </p>
                         {/* <div className="scroll">
