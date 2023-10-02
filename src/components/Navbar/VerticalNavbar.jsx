@@ -6,7 +6,7 @@ const VerticalNavbar = ({isVisible}) => {
     return (
         <nav className={`v-nav ${isVisible ? 'active' : ''}`}>
             <div className="vnav-logo-container">
-                <img src={logo} alt="" className="vnav-logo" />
+                <img src={logo} alt="" title='Arun Thiyaagarajan' className="vnav-logo" />
             </div>
             <ul className="v-nav-links">
                 {navLinks.map((item) => {
