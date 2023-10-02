@@ -51,6 +51,7 @@ export const socialLinks = [
         id: nanoid(),
         title: "Gmail",
         icon: gmail,
-        href: '',
+        href: 'https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSBmzjqFQzDsRzrjlVMLKLTRtxDqFNxkRBcjPRqCncgkQQrSPtztFXTfvrhtTsbPMfkNNQKm',
+        // href: 'mailto:arunthiyaagarajan.ta@gmail.com?subject=Portfolio%20Contact',
     },
 ]

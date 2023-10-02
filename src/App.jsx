@@ -10,7 +10,7 @@ const App = () => {
   
   useEffect(() => {
     const handleScroll = () => {
-        if (!hasScrolled && window.scrollY > 0) {
+        if (!hasScrolled && window.scrollY > 120) {
             setHasScrolled(true);
         }
     };

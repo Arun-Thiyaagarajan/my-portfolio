@@ -75,9 +75,9 @@ Vertical Navbar
     box-shadow: var(--shadow-1);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 1rem 0.3rem;
+    padding: 2rem 0.3rem;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--primary-vnav-blue);
     position: fixed;
     top: 0;
@@ -93,24 +93,60 @@ Vertical Navbar
     left: 0;
 }
 
+.logo-and-links {
+    display: grid;
+    gap: 2rem;
+}
+
+.vnav-logo-container {
+    padding: 0.2rem;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary-white);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+}
+
+.vnav-logo-container:hover {
+    box-shadow: var(--shadow-1);
+}
+
 .vnav-logo {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 30px;
     object-fit: cover;
 }
 
 .v-nav-links {
     display: grid;
+    place-items: center;
     gap: 2rem;
 }
 
 .v-icon-img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     object-fit: cover;
     transition: var(--transition);
 }
 
 .v-icon-img:hover {
+    filter: drop-shadow(0 0 5px #99d5ea);
+}
+
+.v-icon-img:hover {
+    filter: drop-shadow(0 0 5px #99d5ea);
+}
+
+.chat-img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.chat-img:hover {
     filter: drop-shadow(0 0 5px #99d5ea);
 }
