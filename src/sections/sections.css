@@ -95,7 +95,6 @@ About
 */
 .about {
     width: 100%;
-    height: 100vh;
     /* border: 1px solid var(--primary-white); */
 }
 
@@ -121,7 +120,71 @@ About
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: var(--transition);
 }
+
+.resume-img:hover {
+    filter: var(--drop-shadow);
+}
+
+.about-container {
+    /* border: 1px solid; */
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.about-info {
+    /* border: 1px solid; */
+    width: 45%;
+}
+
+.info-para {
+    width: 100%;
+    line-height: 1.8;
+}
+
+.skills-container {
+    /* border: 1px solid; */
+    width: 55%;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.skill {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--hover-bg-color);
+    transition: var(--transition);
+}
+
+.skill:hover {
+    transform: scale(1.01);
+    box-shadow: var(--shadow-1);
+    border: 2px solid var(--primary-white);
+    padding: 1rem;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+}
+
+.skill-title {
+    font-weight: 500;
+}
+
 
 /* 
 =============

@@ -43,6 +43,8 @@
     --text-shadow-10: 0 0 10px #b5dae6;
     --text-shadow-15: 0 0 15px #b5dae6;
 
+    --drop-shadow: drop-shadow(0 0 5px #99d5ea);
+
     /* Cursor Style */
     --default-cursor: url('./assets/cursor-24.png'), auto;
     --text-cursor: url('./assets/text-cursor.png'), auto;
@@ -123,6 +125,18 @@ a {
   font-weight: bold;
   border-radius: 10px;
   padding: 0.3rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
 }
 
 .upper-case {

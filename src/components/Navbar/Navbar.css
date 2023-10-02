@@ -133,11 +133,7 @@ Vertical Navbar
 }
 
 .v-icon-img:hover {
-    filter: drop-shadow(0 0 5px #99d5ea);
-}
-
-.v-icon-img:hover {
-    filter: drop-shadow(0 0 5px #99d5ea);
+    filter: var(--drop-shadow);
 }
 
 .chat-img {
