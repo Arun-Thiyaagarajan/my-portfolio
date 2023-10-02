@@ -1,10 +1,9 @@
-nav {
+.nav {
     height: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: stretch;
-    /* box-shadow: var(--shadow-2); */
 }
 
 .nav-center {
@@ -39,9 +38,6 @@ nav {
     font-size: 1.25rem;
     text-shadow: var(--text-shadow-5);
     transition: var(--transition);
-    /* border: 2px solid var(--primary-white);
-    border-right: 3px solid var(--primary-white);
-    border-bottom: 3px solid var(--primary-white); */
 }
 
 .nav-link:hover {
@@ -49,8 +45,6 @@ nav {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     text-decoration: underline;
-    /* box-shadow: 0 0 8px #b5dae6; */
-    /* border-right: 5px solid var(--primary-white); */
     text-shadow: var(--text-shadow-15);
 }
 
@@ -58,13 +52,65 @@ nav {
     .logo-title {
         font-size: 1.2rem;
     }
-/* 
+
+    /* 
     .nav-center {
         flex-direction: column;
         align-items: center;
     } */
-    
+
     .nav-links {
         display: none;
     }
+}
+
+/* 
+===================
+Vertical Navbar
+===================
+*/
+.v-nav {
+    width: 4.5rem;
+    height: 100vh;
+    box-shadow: var(--shadow-1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0.3rem;
+    align-items: center;
+    background-color: var(--primary-vnav-blue);
+    position: fixed;
+    top: 0;
+    left: -10%;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.v-nav.active {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+.vnav-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.v-nav-links {
+    display: grid;
+    gap: 2rem;
+}
+
+.v-icon-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.v-icon-img:hover {
+    filter: drop-shadow(0 0 5px #99d5ea);
 }

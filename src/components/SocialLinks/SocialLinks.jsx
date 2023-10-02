@@ -5,7 +5,7 @@ import { socialLinks } from '../../data'
 const SocialLinks = () => {
     return (
         <>
-            <article className='social-link-container'>
+            <article className='social-link-container' >
                 {socialLinks.map((link) => {
                     const { id, title, icon, href } = link;
                     return (

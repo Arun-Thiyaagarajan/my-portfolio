@@ -1,17 +1,17 @@
 import React from 'react'
 import { navLinks } from '../../data'
-import { Link } from 'react-router-dom'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
     return (
-        <nav className='pd-inline'>
+        <nav className='pd-inline nav'>
             <div className="nav-center">
 
                 <div className="logo">
                     <h2 className='logo-title'>
-                        <Link to='/'>Arun Thiyaagarajan</Link>
+                        <a href='/'>Arun Thiyaagarajan</a>
                     </h2>
                 </div>
 
@@ -20,7 +20,7 @@ const Navbar = () => {
                         const { id, title, href } = link
                         return (
                             <li key={id} className="nav-link">
-                                <Link to={href}>{title}</Link>
+                                <a href={href}>{title}</a>
                             </li>
                         );
                     })}

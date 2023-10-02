@@ -3,22 +3,28 @@ import github from './assets/github.png'
 import insta from './assets/instagram.png'
 import linkedin from './assets/linkedin.png'
 import gmail from './assets/gmail.png'
+import home from './assets/home.png'
+import about from './assets/user-robot.png'
+import projects from './assets/computer.png'
 
 export const navLinks = [
     {
         id: nanoid(),
+        icon: home,
         title: "Home",
-        href: '/',
+        href: '#home',
     },
     {
         id: nanoid(),
-        title: "About",
-        href: '/about',
+        icon: about,
+        title: "About Me",
+        href: '#about',
     },
     {
         id: nanoid(),
+        icon: projects,
         title: "Projects",
-        href: '/projects',
+        href: '#contact',
     },
 ]
 
@@ -45,6 +51,6 @@ export const socialLinks = [
         id: nanoid(),
         title: "Gmail",
         icon: gmail,
-        href: 'arunthiyaagarajan.ta@gmail.com',
+        href: '',
     },
 ]

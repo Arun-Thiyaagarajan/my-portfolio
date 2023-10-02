@@ -1,3 +1,8 @@
+/* 
+=============
+Home
+=============
+*/
 .hero {
     width: 100%;
     height: calc(100vh - 6rem);
@@ -39,6 +44,7 @@
         height: 100vh;
         width: 100%;
     }
+
     .hello-text {
         margin-top: 5rem;
         width: 100%;
@@ -80,3 +86,27 @@
         /* Color of the cursor */
     }
 }
+
+
+/* 
+=============
+About
+=============
+*/
+.about {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid var(--primary-white); */
+}
+
+/* 
+=============
+Projects
+=============
+*/
+
+/* 
+=============
+Contact
+=============
+*/

@@ -6,6 +6,10 @@
   --primary-grey: #81a5aa;
   --primary-blue: #071143;
   --primary-dk-blue: #02021c;
+  --primary-vnav-blue: #08081c;
+  
+  --violet: #c9aed6;
+  --green: #aed6c0;
 
   /* fonts */
   --ibm-plex-mono: 'IBM Plex Mono', monospace;
@@ -17,6 +21,7 @@
   --lower-case: lowercase;
 
   /* general */
+  --bg-color: linear-gradient(330deg, var(--primary-blue) 0%, var(--primary-dk-blue) 100%);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
@@ -25,12 +30,13 @@
   --fluid-width: 90vw;
 
   /* box shadow*/
-  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  --shadow-1: 0 1px 5px #99d5ea;
+  --shadow-2: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
   0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  --shadow-4: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
   0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  --shadow-5: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
   0 10px 10px -5px rgba(0, 0, 0, 0.04);
   
   /* text shadow*/
@@ -59,13 +65,26 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-white);
+  box-shadow: var(--shadow-1);
+  border-radius: 5px;
+}
+
 body {
-  /* background: url("./assets/background.svg"); */
-  background: var(--primary-blue);
-  background: -webkit-linear-gradient(330deg, var(--primary-blue) 0%, var(--primary-dk-blue) 100%);
-  background: linear-gradient(330deg, var(--primary-blue) 0%, var(--primary-dk-blue) 100%);
+  background: var(--bg-color);
   font-family: var(--ibm-plex-mono);
   cursor: var(--default-cursor);
+  color: var(--primary-grey);
+  /* background: -webkit-linear-gradient(330deg, var(--primary-blue) 0%, var(--primary-dk-blue) 100%); */
 }
 
 p {
@@ -85,6 +104,22 @@ a {
   color: inherit;
   cursor: url('./assets/cursor-pointer.png'),auto;
 }
+
+.section {
+  /* border: 1px solid; */
+  scroll-margin-top: 3rem;
+  padding: 2rem 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 .upper-case {
   text-transform: uppercase;
