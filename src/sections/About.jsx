@@ -1,8 +1,7 @@
 import React from 'react'
 import Title from '../components/Title'
 import cv from '../assets/cv.png'
-import react_img from '../assets/react.png'
-import js from '../assets/js.png'
+import { skills } from '../data'
 
 const About = ({ hasScrolled }) => {
     return (
@@ -31,28 +30,15 @@ const About = ({ hasScrolled }) => {
                             </p>
                         </div>
                         <div className="skills-container">
-                            <div className="skill">
-                                <img src={react_img} alt="" className="skill-icon" />
-                                <p className="skill-title capitalize">react</p>
-                            </div>
-                            <div className="skill">
-                                <img src={js} alt="" className="skill-icon" />
-                                <p className="skill-title capitalize">Javascript</p>
-                            </div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
-                            <div className="skill"></div>
+                            {skills.map((skill) => {
+                                const { id, icon, title } = skill;
+                                return (
+                                    <div className="skill">
+                                        <img src={icon} alt="" className="skill-icon" />
+                                        <p className="skill-title capitalize">{ title }</p>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
 
