@@ -18,7 +18,7 @@ export const navLinks = [
         id: nanoid(),
         icon: images.projects,
         title: "Projects",
-        href: '#contact',
+        href: '#projects',
     },
 ]
 
@@ -98,21 +98,6 @@ export const skills = [
     },
     {
         id: nanoid(),
-        title: "firebase",
-        icon: images.firebase,
-    },
-    {
-        id: nanoid(),
-        title: "git",
-        icon: images.git,
-    },
-    {
-        id: nanoid(),
-        title: "android studio",
-        icon: images.android,
-    },
-    {
-        id: nanoid(),
         title: "c",
         icon: images.c,
     },
@@ -125,6 +110,21 @@ export const skills = [
         id: nanoid(),
         title: "Python",
         icon: images.python,
+    },
+    {
+        id: nanoid(),
+        title: "firebase",
+        icon: images.firebase,
+    },
+    {
+        id: nanoid(),
+        title: "git",
+        icon: images.git,
+    },
+    {
+        id: nanoid(),
+        title: "android studio",
+        icon: images.android,
     },
     {
         id: nanoid(),

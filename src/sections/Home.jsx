@@ -4,6 +4,7 @@ import './sections.css'
 import { FaQuoteRight, FaQuoteLeft } from 'react-icons/fa6'
 import SocialLinks from '../components/SocialLinks/SocialLinks'
 import VerticalNavbar from '../components/Navbar/VerticalNavbar'
+import * as images from '../assets'
 
 const Home = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -36,15 +37,18 @@ const Home = () => {
             <div className="pd-inline">
                 <section className="hero">
                     <div className="hero-text">
+                        
                         <h1 className="hello-text">hello world :)</h1>
+                        
                         <p className="hero-content">
                             <span><FaQuoteLeft /> </span>
                             In the world of <span className='highlight'>web & app development</span>, I'm the craftsman weaving a tapestry of code and creativity! Inviting users on immersive journeys.
                             <span> <FaQuoteRight /></span>
                         </p>
-                        {/* <div className="scroll">
-                            <img src="../../assets/ScrollDown.gif" width='50px' height='50px' alt="" />
-                        </div> */}
+                        
+                        <div className="scroll-down">
+                            <img src={images.scrolldown} className='scroll-down-icon' alt="" />
+                        </div>
                     </div>
                 </section>
             </div>

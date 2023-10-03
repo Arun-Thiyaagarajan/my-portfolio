@@ -6,7 +6,7 @@ import home from './home.png'
 import about from './user-robot.png'
 import projects from './computer.png'
 import react_img from './react.png'
-import js from './js.png'
+import js from './js.svg'
 import html from './html.png'
 import css from './css.png'
 import node from './Nodejs.svg'
@@ -21,11 +21,13 @@ import git from './git.svg'
 import android from './android.svg'
 import firebase from './firebase.svg'
 import figma from './figma.svg'
+import scrolldown from './ScrollDown.gif'
+import arrow from './arrow.gif'
 
 export {
-    figma, firebase, c, git, android,
+    scrolldown, figma, firebase, c, git, android,
     github, insta, linkedin, gmail, home,
     about, projects, react_img, js, html,
     css, node, redux, bootstrap, express,
-    mysql, java, python
+    mysql, java, python, arrow
 };

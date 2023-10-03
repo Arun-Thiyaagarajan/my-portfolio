@@ -2,6 +2,7 @@ import React from 'react'
 import Title from '../components/Title'
 import cv from '../assets/cv.png'
 import { skills } from '../data'
+import * as images from '../assets'
 
 const About = ({ hasScrolled }) => {
     return (
@@ -17,7 +18,12 @@ const About = ({ hasScrolled }) => {
                         </a>
                     </span>
 
+                    <span className="arrow-icon">
+                        <img src={images.arrow} alt="Resume" className='arrow-img' />
+                    </span>
+
                     <div className="about-container mt-3">
+                        
                         <div className="about-info">
                             <p className="info-para mb-2">
                                 Hey there! I'm <span className="bold">Arun Thiyaagarajan</span>, a passionate and skilled web developer specializing in <span className="bold">HTML, CSS, JavaScript, and React.js</span>. With a strong focus on creating user-centered websites, I combine my technical expertise with a keen design sensibility to deliver captivating UI experiences.
@@ -29,17 +35,19 @@ const About = ({ hasScrolled }) => {
                                 One of my notable achievements includes recognition for an <span className="bold">Intel One-API Hackathon project</span>. This project involved developing a web application that enables users to predict skin diseases. By leveraging technologies such as React JS, Styled-Components, Machine Learning, Deep Learning, Python, and Flask, We created web application that empowers users to identify potential skin issues.
                             </p>
                         </div>
+
                         <div className="skills-container">
                             {skills.map((skill) => {
                                 const { id, icon, title } = skill;
                                 return (
-                                    <div className="skill">
+                                    <div key={id} className="skill">
                                         <img src={icon} alt="" className="skill-icon" />
                                         <p className="skill-title capitalize">{ title }</p>
                                     </div>
                                 );
                             })}
                         </div>
+                    
                     </div>
 
                 </section>
