@@ -1,30 +1,22 @@
 import { nanoid } from "nanoid";
-import github from './assets/github.png'
-import insta from './assets/instagram.png'
-import linkedin from './assets/linkedin.png'
-import gmail from './assets/gmail.png'
-import home from './assets/home.png'
-import about from './assets/user-robot.png'
-import projects from './assets/computer.png'
-import react_img from './assets/react.png'
-import js from './assets/js.png'
+import * as images from './assets'
 
 export const navLinks = [
     {
         id: nanoid(),
-        icon: home,
+        icon: images.home,
         title: "Home",
         href: '#home',
     },
     {
         id: nanoid(),
-        icon: about,
+        icon: images.about,
         title: "About Me",
         href: '#about',
     },
     {
         id: nanoid(),
-        icon: projects,
+        icon: images.projects,
         title: "Projects",
         href: '#contact',
     },
@@ -34,25 +26,25 @@ export const socialLinks = [
     {
         id: nanoid(),
         title: "LinkedIn",
-        icon: linkedin,
+        icon: images.linkedin,
         href: 'https://www.linkedin.com/in/thiyaagarajan-n/',
     },
     {
         id: nanoid(),
         title: "GitHub",
-        icon: github,
+        icon: images.github,
         href: 'https://github.com/Arun-Thiyaagarajan',
     },
     {
         id: nanoid(),
         title: "Instagram",
-        icon: insta,
+        icon: images.insta,
         href: 'https://www.instagram.com/arunthiyaagarajan/',
     },
     {
         id: nanoid(),
         title: "Gmail",
-        icon: gmail,
+        icon: images.gmail,
         href: 'https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSBmzjqFQzDsRzrjlVMLKLTRtxDqFNxkRBcjPRqCncgkQQrSPtztFXTfvrhtTsbPMfkNNQKm',
         // href: 'mailto:arunthiyaagarajan.ta@gmail.com?subject=Portfolio%20Contact',
     },
@@ -62,31 +54,81 @@ export const skills = [
     {
         id: nanoid(),
         title: "HTML",
-        icon: "",
+        icon: images.html,
     },
     {
         id: nanoid(),
         title: "CSS",
-        icon: "",
+        icon: images.css,
+    },
+    {
+        id: nanoid(),
+        title: "Bootstrap",
+        icon: images.bootstrap,
     },
     {
         id: nanoid(),
         title: "Javascript",
-        icon: js,
+        icon: images.js,
     },
     {
         id: nanoid(),
-        title: "React JS",
-        icon: react_img,
+        title: "React",
+        icon: images.react_img,
     },
     {
         id: nanoid(),
         title: "Redux",
-        icon: "",
+        icon: images.redux,
     },
     {
         id: nanoid(),
-        title: "Node JS",
-        icon: "",
+        title: "NodeJS",
+        icon: images.node,
+    },
+    {
+        id: nanoid(),
+        title: "ExpressJS",
+        icon: images.express,
+    },
+    {
+        id: nanoid(),
+        title: "MySQL",
+        icon: images.mysql,
+    },
+    {
+        id: nanoid(),
+        title: "firebase",
+        icon: images.firebase,
+    },
+    {
+        id: nanoid(),
+        title: "git",
+        icon: images.git,
+    },
+    {
+        id: nanoid(),
+        title: "android studio",
+        icon: images.android,
+    },
+    {
+        id: nanoid(),
+        title: "c",
+        icon: images.c,
+    },
+    {
+        id: nanoid(),
+        title: "Java",
+        icon: images.java,
+    },
+    {
+        id: nanoid(),
+        title: "Python",
+        icon: images.python,
+    },
+    {
+        id: nanoid(),
+        title: "figma",
+        icon: images.figma,
     },
 ]

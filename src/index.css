@@ -48,6 +48,7 @@
     /* Cursor Style */
     --default-cursor: url('./assets/cursor-24.png'), auto;
     --text-cursor: url('./assets/text-cursor.png'), auto;
+    --pointer-cursor: url('./assets/cursor-pointer.png'), auto;
 }
 
 /*
@@ -88,7 +89,7 @@ body {
 }
 
 p {
-  cursor: url('./assets/text-cursor.png'), auto;
+  cursor: var(--text-cursor);
 }
 
 h1 {
@@ -102,7 +103,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  cursor: url('./assets/cursor-pointer.png'),auto;
+  cursor: var(--pointer-cursor);
 }
 
 .section {
