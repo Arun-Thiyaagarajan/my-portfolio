@@ -292,7 +292,7 @@ Projects
 }
 
 .project-container:hover .github-icon {
-    /* opacity: 1; */
+    opacity: 1;
 }
 
 .period {
