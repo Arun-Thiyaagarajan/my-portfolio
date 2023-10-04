@@ -23,11 +23,19 @@ import firebase from './firebase.svg'
 import figma from './figma.svg'
 import scrolldown from './ScrollDown.gif'
 import arrow from './arrow.gif'
+import laptop from './laptop.svg'
+import laptop2 from './laptop2.svg'
+import laptop3 from './laptop3.svg'
+import cv from './cv.png'
+import dermnet from './Dermnet 1.png'
+import mlc from './mlc.png'
+import ss from './ss2.png'
 
 export {
-    scrolldown, figma, firebase, c, git, android,
+    ss, scrolldown, figma, firebase, c, git, android,
     github, insta, linkedin, gmail, home,
     about, projects, react_img, js, html,
     css, node, redux, bootstrap, express,
-    mysql, java, python, arrow
+    mysql, java, python, arrow, cv, laptop,
+    laptop2, laptop3, dermnet, mlc
 };

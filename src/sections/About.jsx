@@ -14,7 +14,7 @@ const About = ({ hasScrolled }) => {
 
                     <span className="resume-icon">
                         <a href="https://drive.google.com/file/d/1Imv7XrxhWYlPLvNd7z6SetrGDfPAPXgo/view?usp=drive_link" target='_blank' title='See My Resume' rel="noopener noreferrer">
-                            <img src={cv} alt="Resume" className='resume-img' />
+                            <img src={images.cv} alt="Resume" className='resume-img' loading='lazy' />
                         </a>
                     </span>
 
@@ -23,7 +23,7 @@ const About = ({ hasScrolled }) => {
                     </span>
 
                     <div className="about-container mt-3">
-                        
+
                         <div className="about-info">
                             <p className="info-para mb-2">
                                 Hey there! I'm <span className="bold">Arun Thiyaagarajan</span>, a passionate and skilled web developer specializing in <span className="bold">HTML, CSS, JavaScript, and React.js</span>. With a strong focus on creating user-centered websites, I combine my technical expertise with a keen design sensibility to deliver captivating UI experiences.
@@ -41,13 +41,13 @@ const About = ({ hasScrolled }) => {
                                 const { id, icon, title } = skill;
                                 return (
                                     <div key={id} className="skill">
-                                        <img src={icon} alt="" className="skill-icon" />
-                                        <p className="skill-title capitalize">{ title }</p>
+                                        <img src={icon} alt="" className="skill-icon" loading='lazy' />
+                                        <p className="skill-title capitalize">{title}</p>
                                     </div>
                                 );
                             })}
                         </div>
-                    
+
                     </div>
 
                 </section>

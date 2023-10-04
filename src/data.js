@@ -45,7 +45,7 @@ export const socialLinks = [
         id: nanoid(),
         title: "Gmail",
         icon: images.gmail,
-        href: 'https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSBmzjqFQzDsRzrjlVMLKLTRtxDqFNxkRBcjPRqCncgkQQrSPtztFXTfvrhtTsbPMfkNNQKm',
+        href: 'https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSHwrwzFfQNQrjwbxbXFlCTtbTZsrBQhQgWHRzqKgVcLZtrdmkqLKmZcljxSWZMsDvfMxCJG',
         // href: 'mailto:arunthiyaagarajan.ta@gmail.com?subject=Portfolio%20Contact',
     },
 ]
@@ -130,5 +130,32 @@ export const skills = [
         id: nanoid(),
         title: "figma",
         icon: images.figma,
+    },
+]
+
+export const projects = [
+    {
+        id: nanoid(),
+        title: "MLC Inventory System for Tiles Company",
+        period: "June '23 - Present",
+        desc: "It is a beneficial system or web app for all of the tiles company and even small tiles or granite showrooms, to check their inventory and stocks lively.",
+        tech_stack: ["React JS", "Node JS", "Express JS", "MySQL"],
+        image: images.mlc,
+    },
+    {
+        id: nanoid(),
+        title: "Shop Smart: A Self-Checkout System",
+        period: "Feburary '23 - April '23",
+        desc: "It's a web application that allows customers to use their smartphones to check out independently at supermarkets. The main goal of this project is to eliminate the requirement for the consumer to wait in line for billing.",
+        tech_stack: ["React JS","Node JS", "Express JS", "MySQL", "Material UI"],
+        image: images.ss,
+    },
+    {
+        id: nanoid(),
+        title: "DermNet: A Skin Prediction System",
+        period: "August '23",
+        desc: "For users to determine what kind of skin illness they have, there is a web application that is mobile-compatible.",
+        tech_stack: ["React JS","Node JS", "Express JS", "MySQL"],
+        image: images.dermnet,
     },
 ]

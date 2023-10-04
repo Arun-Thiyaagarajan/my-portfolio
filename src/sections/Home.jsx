@@ -37,17 +37,19 @@ const Home = () => {
             <div className="pd-inline">
                 <section className="hero">
                     <div className="hero-text">
-                        
+
                         <h1 className="hello-text">hello world :)</h1>
-                        
+
                         <p className="hero-content">
                             <span><FaQuoteLeft /> </span>
                             In the world of <span className='highlight'>web & app development</span>, I'm the craftsman weaving a tapestry of code and creativity! Inviting users on immersive journeys.
                             <span> <FaQuoteRight /></span>
                         </p>
-                        
+
                         <div className="scroll-down">
-                            <img src={images.scrolldown} className='scroll-down-icon' alt="" />
+                            <a href="#about">
+                                <img src={images.scrolldown} className='scroll-down-icon' alt="" />
+                            </a>
                         </div>
                     </div>
                 </section>
