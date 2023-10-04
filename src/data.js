@@ -141,6 +141,7 @@ export const projects = [
         desc: "It is a beneficial system or web app for all of the tiles company and even small tiles or granite showrooms, to check their inventory and stocks lively.",
         tech_stack: ["React JS", "Node JS", "Express JS", "MySQL"],
         image: images.mlc,
+        github: "https://github.com/Arun-Thiyaagarajan/mahalakshmi-cerramics",
     },
     {
         id: nanoid(),
@@ -149,6 +150,7 @@ export const projects = [
         desc: "It's a web application that allows customers to use their smartphones to check out independently at supermarkets. The main goal of this project is to eliminate the requirement for the consumer to wait in line for billing.",
         tech_stack: ["React JS","Node JS", "Express JS", "MySQL", "Material UI"],
         image: images.ss,
+        github: "https://github.com/Arun-Thiyaagarajan/mahalakshmi-cerramics",
     },
     {
         id: nanoid(),
@@ -157,5 +159,6 @@ export const projects = [
         desc: "For users to determine what kind of skin illness they have, there is a web application that is mobile-compatible.",
         tech_stack: ["React JS","Node JS", "Express JS", "MySQL"],
         image: images.dermnet,
+        github: "https://github.com/Arun-Thiyaagarajan/DermNet-Final",
     },
 ]

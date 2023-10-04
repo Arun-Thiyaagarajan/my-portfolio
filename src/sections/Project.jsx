@@ -12,18 +12,20 @@ const Project = ({ hasScrolled }) => {
 
                     <div className="projects-container mt-2">
                         {projects.map((project) => {
-                            const { id, title, tech_stack, desc, period, image } = project
+                            const { id, title, tech_stack, desc, period, image, github } = project
 
                             return (
                                 <article key={id} className="project-container">
                                     <div className="project-info">
                                         <div className='info-box'>
                                             <h3 className='project-title mb-1'>
-                                                {title}
-                                                <span className="github-link">
-                                                    <img src={images.github} alt='' className='github-icon' />
-                                                </span>
+                                                <a href={github} target='_blank'>{title}</a>
                                             </h3>
+                                            {/* <span className="github-link">
+                                                <a href="https://github.com/">
+                                                    <img src={images.github} alt='' className='github-icon' />
+                                                </a>
+                                            </span> */}
                                             <p className="period">{period}</p>
                                         </div>
                                         <div className="img-container">

@@ -277,22 +277,13 @@ Projects
 
 .project-container:hover .project-title {
     text-shadow: var(--text-shadow-5);
-}
-
-.github-link {
-    height: 100%;
-    margin-left: 1rem;
+    text-decoration: underline;
 }
 
 .github-icon {
-    opacity: 0;
     width: 24px;
     height: 24px;
     object-fit: cover;
-}
-
-.project-container:hover .github-icon {
-    opacity: 1;
 }
 
 .period {
@@ -332,6 +323,7 @@ Projects
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    line-height: 1.5;
 }
 
 .tech-container {
