@@ -10,6 +10,7 @@
   --primary-vnav-blue: #08081c;
   --hover-bg-color: #9dc0cc20;
   --hover-bg-color-2: #9dc0cc0e;
+  --footer-bg: #02021c60;
 
   /* fonts */
   --ibm-plex-mono: 'IBM Plex Mono', monospace;
@@ -152,6 +153,10 @@ a {
 
 .mb-1 {
   margin-bottom: 1rem;
+}
+
+.mb-1-5 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-2 {

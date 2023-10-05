@@ -1,5 +1,6 @@
 import Title from '../components/Title'
 import { projects } from '../data'
+import * as images from '../assets'
 
 const Project = ({ hasScrolled }) => {
     return (

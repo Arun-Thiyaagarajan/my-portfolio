@@ -20,3 +20,24 @@
     border-bottom-left-radius: 5px;
     margin-right: 1rem;
 }
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    padding-left: 6rem;
+    background-color: var(--footer-bg);
+    border-top: 2px solid var(--hover-bg-color);
+    /* box-shadow: 0 0 30px #4ab9ca45 */
+}
+
+.footer-info {
+    width: 40%;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}

@@ -1,4 +1,5 @@
 import logo from './atlogo.png'
+import send from './send.png'
 import github from './github.png'
 import insta from './instagram.png'
 import linkedin from './linkedin.png'
@@ -39,5 +40,5 @@ export {
     about, projects, react_img, js, html,
     css, node, redux, bootstrap, express,
     mysql, java, python, arrow, cv, laptop,
-    laptop2, laptop3, dermnet, mlc, chat, logo
+    laptop2, laptop3, dermnet, mlc, chat, logo, send
 };

@@ -261,7 +261,6 @@ Projects
 .project-info {
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
     gap: 2rem;
 }
 
@@ -273,8 +272,8 @@ Projects
     font-size: 1.3rem;
     color: var(--primary-white);
     transition: var(--transition);
-    display: flex;
-    align-items: start;
+    /* display: flex;
+    align-items: start; */
 }
 
 .project-title .p-title {
@@ -288,11 +287,12 @@ Projects
 
 .github-link {
     width: 5%;
-    display: inline-block;
     margin-left: 1rem;
 }
 
 .github-icon {
+    /* display: flex;
+    align-items: baseline; */
     width: 24px;
     height: 24px;
     object-fit: cover;
@@ -362,6 +362,7 @@ Contact
 
 .contact {
     width: 100%;
+    height: 91vh;
 }
 
 .contact-container {
@@ -374,7 +375,7 @@ Contact
 
 .contact-form-container {
     width: 70%;
-    padding: 1rem 0;
+    padding: 1rem 0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -416,7 +417,22 @@ Contact
     /* border: 1px solid; */
 }
 
-input {
+.tarea, .input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tarea {
+    align-items: start;
+}
+
+.tarea textarea {
+    padding-top: 0.2rem;
+    cursor: var(--text-cursor);
+}
+
+input, textarea {
     width: 49%;
     height: 100%;
     padding: 0.6rem 0;
@@ -425,14 +441,52 @@ input {
     font-family: inherit;
     color: var(--primary-grey);
     outline: none;
+    overflow: hidden;
     color: var(--primary-white);
     caret-color: var(--primary-white);
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
     color: var(--primary-grey);
 }
 
 input:focus .arrow-right {
     filter: var(--drop-shadow);
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin: auto;
+    padding: 0.7rem 1rem;
+    
+    font-size: 0.9rem;
+    color: var(--primary-white);
+    font-family: inherit;
+    background-color: var(--hover-bg-color-2);
+    border: 2px solid var(--hover-bg-color);
+    border-radius: 10px;
+    cursor: var(--pointer-cursor);
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background-color: var(--hover-bg-color);
+    border-color: var(--primary-white);
+}
+
+.send-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+    display: flex;
+    transition: var(--transition);
+    align-items: baseline;
+}
+
+.submit-btn:hover .send-icon {
+    transform: translate(3px, -3px);
 }
