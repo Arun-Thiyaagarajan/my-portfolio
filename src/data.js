@@ -20,6 +20,12 @@ export const navLinks = [
         title: "Projects",
         href: '#projects',
     },
+    {
+        id: nanoid(),
+        icon: images.chat,
+        title: "Contact",
+        href: '#contact',
+    },
 ]
 
 export const socialLinks = [

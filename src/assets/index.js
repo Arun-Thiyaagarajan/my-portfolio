@@ -1,3 +1,4 @@
+import logo from './atlogo.png'
 import github from './github.png'
 import insta from './instagram.png'
 import linkedin from './linkedin.png'
@@ -30,6 +31,7 @@ import cv from './cv.png'
 import dermnet from './Dermnet 1.png'
 import mlc from './mlc.png'
 import ss from './ss2.png'
+import chat from './chat.png'
 
 export {
     ss, scrolldown, figma, firebase, c, git, android,
@@ -37,5 +39,5 @@ export {
     about, projects, react_img, js, html,
     css, node, redux, bootstrap, express,
     mysql, java, python, arrow, cv, laptop,
-    laptop2, laptop3, dermnet, mlc
+    laptop2, laptop3, dermnet, mlc, chat, logo
 };

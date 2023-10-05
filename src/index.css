@@ -90,7 +90,11 @@ body {
   /* background: -webkit-linear-gradient(330deg, var(--primary-blue) 0%, var(--primary-dk-blue) 100%); */
 }
 
-p {
+label {
+  cursor: var(--default-cursor);
+}
+
+p, input {
   cursor: var(--text-cursor);
 }
 

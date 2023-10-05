@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './sections/Home'
 import About from './sections/About'
 import Project from './sections/Project'
+import Contact from './sections/Contact'
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
             <Home />
             <About hasScrolled={hasScrolled} />
             <Project hasScrolled={hasScrolled} />
+            <Contact hasScrolled={hasScrolled} />
         </main>
     )
 }
