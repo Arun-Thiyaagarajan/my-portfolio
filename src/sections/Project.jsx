@@ -36,9 +36,9 @@ const Project = ({ hasScrolled }) => {
                                         <p className="project-desc">{desc}</p>
 
                                         <div className="tech-container">
-                                            {tech_stack.map((item) => {
+                                            {tech_stack.map((item, index) => {
                                                 return (
-                                                    <span className="tech-stack bold">{item}</span>
+                                                    <span key={index} className="tech-stack bold">{item}</span>
                                                 );
                                             })}
                                         </div>
