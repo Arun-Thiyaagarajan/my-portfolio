@@ -51,8 +51,8 @@ export const socialLinks = [
         id: nanoid(),
         title: "Gmail",
         icon: images.gmail,
-        href: 'https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSHwrwzFfQNQrjwbxbXFlCTtbTZsrBQhQgWHRzqKgVcLZtrdmkqLKmZcljxSWZMsDvfMxCJG',
-        // href: 'mailto:arunthiyaagarajan.ta@gmail.com?subject=Portfolio%20Contact',
+        // href: 'https://mail.google.com/mail/u/0/?ogbl#inbox?compose=GTvVlcSHwrwzFfQNQrjwbxbXFlCTtbTZsrBQhQgWHRzqKgVcLZtrdmkqLKmZcljxSWZMsDvfMxCJG',
+        href: 'mailto:arunthiyaagarajan.ta@gmail.com?subject=Portfolio%20Contact',
     },
 ]
 
@@ -156,7 +156,7 @@ export const projects = [
         desc: "It's a web application that allows customers to use their smartphones to check out independently at supermarkets. The main goal of this project is to eliminate the requirement for the consumer to wait in line for billing.",
         tech_stack: ["React JS","Node JS", "Express JS", "MySQL", "Material UI"],
         image: images.ss,
-        github: "https://github.com/Arun-Thiyaagarajan/mahalakshmi-cerramics",
+        github: "https://github.com/raison024/shopsmart",
     },
     {
         id: nanoid(),
